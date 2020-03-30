@@ -220,7 +220,7 @@ export default {
 }
 
 .table {
-  margin: 10px 20px;
+  margin: 10px 20px 0px 20px;
 }
 table {
   font-family: "Acme", sans-serif;
@@ -247,6 +247,10 @@ table td {
 }
 table td:last-child {
   border-right: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
 }
 
 .status {
