@@ -1,7 +1,16 @@
 <template>
   <div>
     <div class="container-card" :style="{ background: color }">
-      <p class="bank_name">{{bank}}</p>
+      <div class="bank">
+        <img
+          v-if="logo"
+          class="img_bank"
+          :src="require(`../assets/icons/${logo}`)"
+          alt="logo"
+          :style="{margin: '0px 0px 0px 30px'}"
+        />
+        <p class="bank_name" :style="{margin: logo ? '5px 10px' : '5px 30px'}">{{bank}}</p>
+      </div>
       <p class="bank_value">{{value}}</p>
       <p class="bank_status">
         <img
@@ -25,7 +34,8 @@ export default {
     value: String,
     positive: Boolean,
     percent: String,
-    color: String
+    color: String,
+    logo: String
   },
   data() {
     return {};
@@ -45,15 +55,30 @@ export default {
   justify-content: center;
 }
 
-.bank_name,
 .bank_value,
 .bank_status {
   color: #ffffff;
   text-align: left;
-  margin: 10px 20px;
   font-family: "Acme";
   font-size: 0.8rem;
   margin: 5px 30px;
+}
+
+.bank {
+  display: flex;
+  align-items: center;
+}
+
+.img_bank {
+  width: 25px;
+  height: 25px;
+}
+
+.bank_name {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Acme";
+  font-size: 0.8rem;
 }
 
 .img_status {

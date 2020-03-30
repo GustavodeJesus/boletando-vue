@@ -10,7 +10,7 @@
 
     <div class="container_status_banks">
       <card-bank
-        v-for="{bank,value,positive,percent,color} in status"
+        v-for="{bank,value,positive,percent,color,logo} in status"
         :key="bank"
         class="card_bank"
         :bank="bank"
@@ -18,6 +18,7 @@
         :positive="positive"
         :percent="percent"
         :color="color"
+        :logo="logo"
       />
     </div>
 
@@ -43,36 +44,41 @@ export default {
           bank: "Banco Itaú",
           value: "R$ 2.500,00",
           percent: "+33.45%",
-          color: "#7E57C2",
-          positive: true
+          color: "#EC7000",
+          positive: true,
+          logo: "icon_logo_itau_varejo_desktop.png"
         },
         {
           bank: "Caixa Economica Federal",
           value: "R$ 470,00",
           percent: "-11.75%",
-          color: "#29B6F6",
-          positive: false
+          color: "#277FB8",
+          positive: false,
+          logo: "icon_logo_cef.png"
         },
         {
           bank: "Bradesco",
           value: "R$ 57.000,00",
           percent: "+65.57%",
-          color: "#04B075",
-          positive: true
+          color: "#8C95A0",
+          positive: true,
+          logo: "icon_logo_bradesco.png"
         },
         {
           bank: "Banco do Brasil",
           value: "R$ 2.500,00",
           percent: "+6.57%",
-          color: "#FFCA28",
-          positive: true
+          color: "#F8D117",
+          positive: true,
+          logo: "icon_logo_bb.png"
         },
         {
           bank: "Banco Sicoob",
           value: "R$ 2.500,00",
           percent: "+33.45%",
-          color: "#FFB018",
-          positive: true
+          color: "#00353D",
+          positive: true,
+          logo: "icon_logo_sicoob.png"
         }
       ]
     };

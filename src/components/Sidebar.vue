@@ -44,7 +44,7 @@
 
         <router-link :to="{name: 'ManageStocks'}" class="nav_item">
           <span class="item_icon">
-            <i class="icon-gear"></i> Controle de estoque
+            <i class="icon-gear"></i> Configuração de Empresa
           </span>
         </router-link>
 
@@ -184,7 +184,7 @@ li {
 }
 
 .item_icon {
-  margin-left: 50px;
+  margin-left: 20px;
   width: auto;
 }
 
