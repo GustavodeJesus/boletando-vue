@@ -50,7 +50,7 @@
 
         <router-link :to="{name: 'ManageSales'}" class="nav_item">
           <span class="item_icon">
-            <i class="icon-gear"></i> Controle de vendas
+            <i class="icon-gear"></i> Controle de Clientes
           </span>
         </router-link>
         <router-link :to="{name: 'ManageTaxes'}" class="nav_item">

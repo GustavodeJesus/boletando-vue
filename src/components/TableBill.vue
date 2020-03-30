@@ -206,7 +206,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   background: #fff;
-  box-shadow: 0px 2px 4px rgba(92, 99, 105, 0.15);
   border-radius: 6px;
 }
 

@@ -98,7 +98,7 @@ export default {
 }
 
 .container_title {
-  margin-top: 100px;
+  margin-top: 40px;
   width: auto;
   margin-left: 30px;
   margin-right: 30px;
